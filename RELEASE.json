@@ -1,0 +1,52 @@
+{
+  "case_count": 60,
+  "family_counts": {
+    "IF": 20,
+    "MCP": 20,
+    "T3": 20
+  },
+  "identities": {
+    "candidate_universe_sha256": "d335377096029f1328ab69722f63a1e4f2313bbb480e9317b9a13ad1e8bbb800",
+    "harness_identity_sha256": "050fd85b5186f698f034e7492e86d2e712ebc01df77f01320ce9bebf7c5ff07c",
+    "harness_lock_sha256": "52b312ef233ebc93ba8f178ae8c70c8b8d8a1c06e2a7cae863dfcfc2c152d339",
+    "manifest_sha256": "40a60bcdb31ee11a231aa03a425866750428c852981e7fcc7124c71d124538c8",
+    "mcp_query_index_sha256": "cf3b163ac8543065887816e5308208965d5c0afe425c8fe182231e37f8885618",
+    "project_uv_lock_sha256": "49ad3a8f4e87bcf085273e760841f3b2cd406f10e06a22195b875811f4c937b5",
+    "selection_policy_sha256": "6ef79e160ae1489b087159c1e25e8b447f46990c8fdf56ff259505ed724b4f2d",
+    "source_lock_sha256": "21db313a4d1c1d9add61e9397a8dd1d65375a9e4007c5d623eda4b33899480a3",
+    "tracked_payload_excluding_release_sha256": "04e4c011c798919c405ad315a2360a40c482001515e8832c577c47d69017a692"
+  },
+  "inference_requests_during_freeze": {
+    "bonsai": 0,
+    "local_mock_endpoint": 1,
+    "other_external_models": 0,
+    "sol": 0
+  },
+  "publication": {
+    "github_remote_created": false,
+    "published": false
+  },
+  "schema": "hard1-release-v1",
+  "status": "LOCAL_FROZEN_NOT_PUBLISHED",
+  "strata": {
+    "IF": {
+      "BOTH_FAIL": 9,
+      "BOTH_PASS": 2,
+      "LUNA_FAIL_ONLY": 1,
+      "QWEN_FAIL_ONLY": 8
+    },
+    "MCP": {
+      "BOTH_FAIL": 9,
+      "BOTH_PASS": 2,
+      "LUNA_FAIL_ONLY": 1,
+      "QWEN_FAIL_ONLY": 8
+    },
+    "T3": {
+      "BOTH_FAIL": 9,
+      "BOTH_PASS": 2,
+      "LUNA_FAIL_ONLY": 4,
+      "QWEN_FAIL_ONLY": 5
+    }
+  },
+  "version": "1.0.0"
+}

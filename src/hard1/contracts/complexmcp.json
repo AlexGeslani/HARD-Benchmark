@@ -1,0 +1,12 @@
+{
+  "schema": "hard1-complexmcp-compatibility-v1",
+  "source_commit": "617e963bd838bee5793a39e6b34165b79535828f",
+  "source_path": "benchmark/judge.py",
+  "source_sha256": "e7c57d5817108d00f0711776138b0603f4a019f941d716c4d1109938dfac9dbc",
+  "patch_path": "complexmcp-rid-oid.patch",
+  "patch_sha256": "bcfe5d526e420032ea2117c85403c5e7225250b212088386725047f5a548e316",
+  "patched_sha256": "24d982b4dec882ab0d9b96b17d09c9a963ef1d239dd7690176029fd7a3f1f52d",
+  "anchor": "    \"bid\", \"brid\", \"rid\" # LightFlight",
+  "replacement": "    \"bid\", \"brid\", \"rid\", # LightFlight",
+  "scope": "Insert the missing comma so rid and oid remain separate excluded identifiers; no other judge behavior changes."
+}

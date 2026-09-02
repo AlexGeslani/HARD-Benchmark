@@ -1,0 +1,7 @@
+{
+  "schema": "hard1-complexmcp-fastmcp-text-json-v1",
+  "fastmcp_version": "2.13.3",
+  "algorithm": "If a textual FastMCP result is valid JSON, return it unchanged. Otherwise parse it with ast.literal_eval, permit only JSON scalar/container types, and return canonical JSON.",
+  "algorithm_sha256": "78dd0386b16bc0e858f9d7f7e55733ddd47a3899d2a44cf71d6d5ddf10a51666",
+  "scope": "Transport representation only; parsed values and evaluator semantics are unchanged."
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "hard1-ifbench-compatibility-v1",
+  "source_commit": "db69a6f05689830b0068b8f1529ebcfd2f3b164c",
+  "source_path": "evaluation_lib.py",
+  "source_sha256": "e681a4b03a6a9dfb540fbd9ef6b963de503a5ffac557ed611c326ee385850cf6",
+  "patch_path": "ifbench-loose-null-kwargs.patch",
+  "patch_sha256": "2f3e45fd27491f3b47ace19adc5f484ccb2f4404521b8f6d520992e9463ed612",
+  "patched_sha256": "a23beb0ebb40f4953517db417d09af449e680c0833a2c16336a4a17a93c85212",
+  "anchor": "    instruction = instruction_cls(instruction_id)\n\n    instruction.build_description(**inp.kwargs[index])",
+  "replacement": "    instruction = instruction_cls(instruction_id)\n    inp.kwargs[index] = {key: value for key, value in inp.kwargs[index].items() if value is not None}\n\n    instruction.build_description(**inp.kwargs[index])",
+  "scope": "Mirror the strict evaluator's null-kwarg filtering in the loose evaluator; scoring rules are unchanged."
+}

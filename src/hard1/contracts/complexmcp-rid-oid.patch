@@ -1,0 +1,11 @@
+--- a/benchmark/judge.py
++++ b/benchmark/judge.py
+@@ -20,7 +20,7 @@
+     "mid", "moid", "cid", "gid", # LightTalk
+     "sid", "tid", "caid", # LightShop
+     "aid", # LightWeather
+-    "bid", "brid", "rid" # LightFlight
++    "bid", "brid", "rid", # LightFlight
+     "oid", # LightStock
+     "nid" # LightNews
+ }

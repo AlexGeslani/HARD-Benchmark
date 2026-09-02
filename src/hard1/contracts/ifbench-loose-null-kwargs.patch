@@ -1,0 +1,10 @@
+--- a/evaluation_lib.py
++++ b/evaluation_lib.py
+@@ -151,6 +151,7 @@ def test_instruction_following_loose(
+   for index, instruction_id in enumerate(instruction_list):
+     instruction_cls = instructions_registry.INSTRUCTION_DICT[instruction_id]
+     instruction = instruction_cls(instruction_id)
++    inp.kwargs[index] = {key: value for key, value in inp.kwargs[index].items() if value is not None}
+ 
+     instruction.build_description(**inp.kwargs[index])
+     args = instruction.get_instruction_args()

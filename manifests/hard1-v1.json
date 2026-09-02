@@ -1,0 +1,989 @@
+{
+  "cases": [
+    {
+      "case_id": "HARD1-IF-001",
+      "category": "count:unique_word_count",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:unique_word_count"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "57",
+      "source_sha256": "68caaaae0008bd5e74cb849afd306efa8b19dc2f8a0e3632a6673a6f4c1aae71",
+      "stratum": "LUNA_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-002",
+      "category": "count:unique_word_count",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:unique_word_count"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "52",
+      "source_sha256": "8ff781a3ec64c1ef67cdc8bcec7f61fd47eeb746007b9bd2f0200c25457ff7d7",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-003",
+      "category": "custom:reverse_newline",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:reverse_newline"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "281",
+      "source_sha256": "21157f6e7790364c8b774a0966bb83d7754357768c3b6cde279cb9702f07a821",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-004",
+      "category": "custom:mcq_count_length",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:mcq_count_length"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "279",
+      "source_sha256": "9ee60b05ec612f893bd66d536509a3c32f04a36cc55f78204d694174aedd44db",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-005",
+      "category": "count:numbers+count:unique_word_count",
+      "family": "IF",
+      "features": {
+        "constraint_count": 2,
+        "instruction_ids": [
+          "count:numbers",
+          "count:unique_word_count"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "24",
+      "source_sha256": "d67b16785992ced59b3492624111e2f569cac401eee2843022e137e51d1736f9",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-006",
+      "category": "count:pronouns",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:pronouns"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "30",
+      "source_sha256": "ff54a4d6443cae2dfc79df18334d7cd19e53341741148847bcf8b403b367f557",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-007",
+      "category": "count:conjunctions",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:conjunctions"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "5",
+      "source_sha256": "b4cf112fe0d0a8cc66e74b55cd46bceb33486f90c9d4630bfdf615349d582f81",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-008",
+      "category": "custom:multiples",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:multiples"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "280",
+      "source_sha256": "b4212986b88444ad26854ee0fd5905bf581137947a6ea72bb3bda4e7a4d91f39",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-009",
+      "category": "custom:character_reverse",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:character_reverse"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "273",
+      "source_sha256": "189f17a5064768b0c3370789d56e1e911df4bd6b40b6dc83eb6b1b9a0fc2cba0",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-IF-010",
+      "category": "count:punctuation",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:punctuation"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "37",
+      "source_sha256": "b947bb05ec615eea881f84f4c14665f1e51ac0ea1112cc167fa4d8c4f6eeb9df",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-011",
+      "category": "count:word_count_range+format:thesis",
+      "family": "IF",
+      "features": {
+        "constraint_count": 2,
+        "instruction_ids": [
+          "count:word_count_range",
+          "format:thesis"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "143",
+      "source_sha256": "325dc910de437d562e25fa883b6469b0a05377eec359e13d1297edb838e685f2",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-012",
+      "category": "count:word_count_range+format:list",
+      "family": "IF",
+      "features": {
+        "constraint_count": 2,
+        "instruction_ids": [
+          "count:word_count_range",
+          "format:list"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "46",
+      "source_sha256": "a5ddd56ed7b54a050f78a35b58b5499ef16272dcd46ba629f7a57101ed2107da",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-013",
+      "category": "count:pronouns+words:vowel",
+      "family": "IF",
+      "features": {
+        "constraint_count": 2,
+        "instruction_ids": [
+          "count:pronouns",
+          "words:vowel"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "270",
+      "source_sha256": "2dbab1d2112fffff8b755294999a863cf8c1eda489e9b0df5aae6bc0c7169325",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-014",
+      "category": "custom:csv_city",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:csv_city"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "274",
+      "source_sha256": "1dad425aebe9b60f4b383ebd649242c650a45cef229102130eefe8466c7640b7",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-015",
+      "category": "custom:csv_quotes",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:csv_quotes"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "275",
+      "source_sha256": "e1bcbed584ea23e0eaf2a4e4440ceb6d1362b09e73448159a16299e12583dcf3",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-016",
+      "category": "custom:csv_special_character",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "custom:csv_special_character"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "276",
+      "source_sha256": "298a4509584de68edb3f1f0844e01ae105da18488ec267849c9cf9e91573a452",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-017",
+      "category": "count:person_names+words:start_verb",
+      "family": "IF",
+      "features": {
+        "constraint_count": 2,
+        "instruction_ids": [
+          "count:person_names",
+          "words:start_verb"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "262",
+      "source_sha256": "d4afc1ed64d60d89c779b25710e7cff8f6ba433568de899d6de08165e5980c29",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-018",
+      "category": "count:words_japanese",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:words_japanese"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "50",
+      "source_sha256": "34a3ff2f4c006e94f59cf99f7d6c5cdbbb36d2e531f585288fd19b0160379377",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-IF-019",
+      "category": "count:punctuation",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:punctuation"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "36",
+      "source_sha256": "990c13bb589b8a5bc323e18ed237b1a2e9edb79204b59dd4f774615010484658",
+      "stratum": "BOTH_PASS"
+    },
+    {
+      "case_id": "HARD1-IF-020",
+      "category": "count:word_count_range",
+      "family": "IF",
+      "features": {
+        "constraint_count": 1,
+        "instruction_ids": [
+          "count:word_count_range"
+        ]
+      },
+      "source_hash_scope": "canonical_json_record",
+      "source_id": "45",
+      "source_sha256": "724e041a1a256871bbddff6e5166cda2eb5ec974d6a1ef46827efd0e1fe21a51",
+      "stratum": "BOTH_PASS"
+    },
+    {
+      "case_id": "HARD1-T3-001",
+      "category": "retail|DB|actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "retail",
+        "programmatic_action_count": 6,
+        "reward_basis": [
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "18d22cd17d1d90cf75567872cec3ea31234f048310be7c7f4e0009532a8030ea",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "retail:33",
+      "source_sha256": "3cbf1110587064148947539db2f8916417bff9a0bf336e06a57b8d5ab4555fc5",
+      "stratum": "LUNA_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-002",
+      "category": "airline|COMMUNICATE+DB|actions:3-5",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 3,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "a80b2540e0b4b75798937cbdd0427da96264178fc46295f0820405285abacaab",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:17",
+      "source_sha256": "d83db4e78ae317b5a20d7a3edb1bd0d04c828cd9b9fb04d9fd8be70a755cade0",
+      "stratum": "LUNA_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-003",
+      "category": "airline|COMMUNICATE+DB|actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 11,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "34aaa958ebb26deebdeb9b231b5d8c782b2742e7e2feb5ea5bfd2bc785e6a8a6",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:39",
+      "source_sha256": "a455a77004ea68543172d7c7fdacae21cb36a2a53aabc93fdc5d3dd084c64e7e",
+      "stratum": "LUNA_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-004",
+      "category": "banking_knowledge|ACTION|actions:3-5",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 5,
+        "reward_basis": [
+          "ACTION"
+        ]
+      },
+      "loaded_task_sha256": "ed86be95630a1536648a433662e2474ef7bbba021f1eedec987c5f8b74fde3d8",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_033",
+      "source_sha256": "570361e6318a2c12e908428b1aa547cbcc580af6617991f762c56eca9d563150",
+      "stratum": "LUNA_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-005",
+      "category": "airline|COMMUNICATE+DB|actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 8,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "8f4c72d36b42eb5f0ac73c7ce2ebf4d336653ec2cace0cfdc5a5b9c5c65db761",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:41",
+      "source_sha256": "68046a6339af2a905b2e85b11ee323ca1f03139cf058ac27322932a6d281d2bb",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-006",
+      "category": "telecom|ENV_ASSERTION|actions:1-2",
+      "family": "T3",
+      "features": {
+        "domain": "telecom",
+        "programmatic_action_count": 2,
+        "reward_basis": [
+          "ENV_ASSERTION"
+        ]
+      },
+      "loaded_task_sha256": "187d0e9b94cfb49c5de33190a6bad84dce60f04584d346a78645094bcf9c19c6",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "telecom:[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]",
+      "source_sha256": "68e6999a530548ccce6503568d9ab45e010e15b69ea236352e59cb8fb79764f3",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-007",
+      "category": "banking_knowledge|ACTION|actions:1-2",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 1,
+        "reward_basis": [
+          "ACTION"
+        ]
+      },
+      "loaded_task_sha256": "dceef873baff7a384fc8bd986b0b55f7798ce8f750206ef0d2f1b657101823b5",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_012",
+      "source_sha256": "9f8b3e8d3c1b109d595b58d36fa6ef88ff1be4c0ef3479888c7a11c4f67eaef5",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-008",
+      "category": "banking_knowledge|ACTION|actions:3-5",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 3,
+        "reward_basis": [
+          "ACTION"
+        ]
+      },
+      "loaded_task_sha256": "d0a739ab65cf3dde2883f2611f641b71f817d1e1572682875c76676c64e0387b",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_035",
+      "source_sha256": "8a1351c86cbdc778b586cab4a25fc9eccbf965818189181d389865ac97a4d2d4",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-009",
+      "category": "airline|COMMUNICATE+DB|actions:3-5",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 5,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "a7835db340db554b31a7ed026a6d355199776984cac61353f9fd22a084a81ddd",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:12",
+      "source_sha256": "3b08fff117282db541608b0ca87950d1e0bceb6bc635b995ba26faa6f70905cd",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-T3-010",
+      "category": "banking_knowledge|DB|actions:1-2",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 2,
+        "reward_basis": [
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "18b64ff82514160a31f5632205269d835b9e1f870278eafb06360ae1b9b26c45",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_010",
+      "source_sha256": "110d98f8378e24eff3dd9bcdf455f3ca77fa92c331bfecb699b33cfc80634c88",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-011",
+      "category": "banking_knowledge||actions:3-5",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 4,
+        "reward_basis": []
+      },
+      "loaded_task_sha256": "d5c5a4dc4d3c2ade1fb0ce53b464f5f1c58e6d0efe26068d7c216c2cb0c33958",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_064",
+      "source_sha256": "1151850a1b83396a76e6799f76840d42e811a3a559da60ef8896ab8af48e94ac",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-012",
+      "category": "airline|COMMUNICATE+DB|actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 19,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "095c16ed00fb3720768b2577097c96ded9fcf71c8dbf95931871019645059cd6",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:44",
+      "source_sha256": "8929066dd57511333580b45fb27627da489653bde7731c8f4c14c536cd0f9c6a",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-013",
+      "category": "banking_knowledge|ACTION|actions:1-2",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 1,
+        "reward_basis": [
+          "ACTION"
+        ]
+      },
+      "loaded_task_sha256": "885cd1982c95238d06de3434b2d69ebdd96dcc0e79db4da354b8b323bac573ca",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_014",
+      "source_sha256": "7e7be29eda6aad35cad08aa0f27cb6ee569666f7fe8a6fc1e6cbcdf52fb86593",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-014",
+      "category": "banking_knowledge||actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 7,
+        "reward_basis": []
+      },
+      "loaded_task_sha256": "6d6e90bf60e17b7ad1a9c9f3a7e1698cbc16ae0e6482e81c5dea81d9485ada36",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_069",
+      "source_sha256": "eeb53eb067fb847f50a8b62044b420b48d526dc506dd0e102e1da16801506999",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-015",
+      "category": "airline|COMMUNICATE+DB|actions:1-2",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 1,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "9379e627ee0511084f343f574c8f444b393ab45589db2996f5404b0a4440d68f",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:16",
+      "source_sha256": "99ff3fbfaf656b5e77e108def6c8f35b38c6dda7ed05236bfd2036de6436ebf4",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-016",
+      "category": "banking_knowledge|ACTION|actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 10,
+        "reward_basis": [
+          "ACTION"
+        ]
+      },
+      "loaded_task_sha256": "0d679029538e2d51b1cb7beb6963a0f1ebce256119a6bd1e2bd0bf5a06210cf6",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_083",
+      "source_sha256": "29b848a64451a675298b57baa4748ebb5069e287bc780d3cd3f9f0fe935e3ef3",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-017",
+      "category": "telecom|ENV_ASSERTION|actions:1-2",
+      "family": "T3",
+      "features": {
+        "domain": "telecom",
+        "programmatic_action_count": 2,
+        "reward_basis": [
+          "ENV_ASSERTION"
+        ]
+      },
+      "loaded_task_sha256": "4f996e21b6e95c2cd59c30ad2a65c16292873fcf2b1f22678a45a5ca487ad39f",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference[PERSONA:Hard]",
+      "source_sha256": "d0283876405e929871524eefdd1c72e07db22587ecc98bedc7e19e00cbe5009b",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-018",
+      "category": "telecom||actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "telecom",
+        "programmatic_action_count": 10,
+        "reward_basis": []
+      },
+      "loaded_task_sha256": "dea561d6a40d8d2041563a1a3ce0e12f889ddbe1c505065b033c9eadbc7273b7",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_sms_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_enabled_off[PERSONA:None]",
+      "source_sha256": "edff35b28e20425eeee734ded86f4e577f5a74dfa3b085c7929688499f995345",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-T3-019",
+      "category": "banking_knowledge|DB|actions:6+",
+      "family": "T3",
+      "features": {
+        "domain": "banking_knowledge",
+        "programmatic_action_count": 13,
+        "reward_basis": [
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "5eb28d1897a9f3ce8ae5e8ce31f9fdb7d5587354d7d89fe3444141bac58d96ed",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "banking_knowledge:task_052",
+      "source_sha256": "0a479328139fd0fc17dc635234e9de556d428cde51f70db2c2576aa62f9ba292",
+      "stratum": "BOTH_PASS"
+    },
+    {
+      "case_id": "HARD1-T3-020",
+      "category": "airline|COMMUNICATE+DB|actions:0",
+      "family": "T3",
+      "features": {
+        "domain": "airline",
+        "programmatic_action_count": 0,
+        "reward_basis": [
+          "COMMUNICATE",
+          "DB"
+        ]
+      },
+      "loaded_task_sha256": "7290e00dce58d7d1cd08cac6e63205af015b2f83fff118d7a74431b0bd1c6c86",
+      "source_hash_scope": "canonical_json_task_record",
+      "source_id": "airline:46",
+      "source_sha256": "6eb4ebfedbee03f63df18c62fddf1958b0b491e30f909ebb8b2ccb977918b450",
+      "stratum": "BOTH_PASS"
+    },
+    {
+      "case_id": "HARD1-MCP-001",
+      "category": "L1|apps:LightTalk|tools:3-5",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightTalk"
+        ],
+        "level": 1,
+        "tool_count": 5
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "4",
+      "source_sha256": "65c8a8e9b2100bab1ee90775cf51553ae9523c5249383fba4c7433a49926f039",
+      "stratum": "LUNA_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-002",
+      "category": "L1|apps:LightShop|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop"
+        ],
+        "level": 1,
+        "tool_count": 9
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "35",
+      "source_sha256": "0b3b4b845edf10371b64ec4d084cd0772de13d4f565e381c8bff49ad39727263",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-003",
+      "category": "L2|apps:LightShop|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop"
+        ],
+        "level": 2,
+        "tool_count": 13
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "16",
+      "source_sha256": "d4832c6ba114fb39bb3344831353c681302179ea64693543319f8fc9fd4d5ffc",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-004",
+      "category": "L2|apps:LightShop+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop",
+          "LightTalk"
+        ],
+        "level": 2,
+        "tool_count": 10
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "31",
+      "source_sha256": "5580d0a6f69992587e660d8abca54552b7987bef5b2d98089a75ea268c0a1d5c",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-005",
+      "category": "L2|apps:LightShop+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop",
+          "LightTalk"
+        ],
+        "level": 2,
+        "tool_count": 17
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "2",
+      "source_sha256": "ea3299b94fd14fa683b3037e195c98f996d0a412e693e62e0db38e32f9b4e420",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-006",
+      "category": "L1|apps:LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightTalk"
+        ],
+        "level": 1,
+        "tool_count": 8
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "5",
+      "source_sha256": "b561fb4e152123113a9a762edc64bddb9d35d04ecd6c34fa43bc6795229c9c3a",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-007",
+      "category": "L1|apps:LightTalk|tools:3-5",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightTalk"
+        ],
+        "level": 1,
+        "tool_count": 5
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "20",
+      "source_sha256": "d30077fba85139dc423dec0b595b01e78d1415af39bf424db27b96f98dcc5b47",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-008",
+      "category": "L2|apps:LightShop|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop"
+        ],
+        "level": 2,
+        "tool_count": 16
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "17",
+      "source_sha256": "78ee5c1bec4276598c28fe6436ceb88f62ee9d6994f75baed8838cb898b22a41",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-009",
+      "category": "L2|apps:LightTalk+LightWeather|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightTalk",
+          "LightWeather"
+        ],
+        "level": 2,
+        "tool_count": 11
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "41",
+      "source_sha256": "89a6200bbe5ee3a44715086d35acd1b8dcb6c16234f54eeb487354254eeac0b7",
+      "stratum": "QWEN_FAIL_ONLY"
+    },
+    {
+      "case_id": "HARD1-MCP-010",
+      "category": "L1|apps:LightShop|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop"
+        ],
+        "level": 1,
+        "tool_count": 10
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "25",
+      "source_sha256": "4461c6da0faaf67a0a66f4825eaf9ca00db1deb3e738e76c1acb720b4e0733de",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-011",
+      "category": "L1|apps:LightShop+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop",
+          "LightTalk"
+        ],
+        "level": 1,
+        "tool_count": 11
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "1",
+      "source_sha256": "b2486e37744e18ad51e2697725a6f7862ae8c09d68e92bc14d460f534ce8dcdc",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-012",
+      "category": "L3|apps:LightFlight+LightTalk+LightWeather|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightFlight",
+          "LightTalk",
+          "LightWeather"
+        ],
+        "level": 3,
+        "tool_count": 19
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "42",
+      "source_sha256": "036b1a720388936e1da3e8f5002db273cfbef8d8d2c5b64b6ddcc80f8b4b21c6",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-013",
+      "category": "L2|apps:LightFlight+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightFlight",
+          "LightTalk"
+        ],
+        "level": 2,
+        "tool_count": 11
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "21",
+      "source_sha256": "5ec3db2006383ef5212e4bda93b0f720fa65b5ddf75ae7510b074bd76d214548",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-014",
+      "category": "L3|apps:LightNews+LightShop+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightNews",
+          "LightShop",
+          "LightTalk"
+        ],
+        "level": 3,
+        "tool_count": 18
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "32",
+      "source_sha256": "30288fadea260f4332eaaf10e18dbdd5e8773ea6dcfacf8905bc3374483d07c6",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-015",
+      "category": "L2|apps:LightShop+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop",
+          "LightTalk"
+        ],
+        "level": 2,
+        "tool_count": 11
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "23",
+      "source_sha256": "2be1deadbf1a37b92960c6f0209a33c04a2980887536c968a666416e95903e42",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-016",
+      "category": "L1|apps:LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightTalk"
+        ],
+        "level": 1,
+        "tool_count": 16
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "8",
+      "source_sha256": "f805df16df08a30f18c7622e4a8c6d2f62afee86f1ae4b69170d3973a90f3454",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-017",
+      "category": "L3|apps:LightFlight+LightNews+LightStock+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightFlight",
+          "LightNews",
+          "LightStock",
+          "LightTalk"
+        ],
+        "level": 3,
+        "tool_count": 38
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "45",
+      "source_sha256": "46c2ed239e78e27f9e32f055ac467d309a6d9b772b565287b40b4058a4527988",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-018",
+      "category": "L3|apps:LightFlight+LightShop+LightStock+LightTalk|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightFlight",
+          "LightShop",
+          "LightStock",
+          "LightTalk"
+        ],
+        "level": 3,
+        "tool_count": 50
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "44",
+      "source_sha256": "12176470ad7c926d50bcf57490e29dd3cee2964213889472a73e02a05b9a9d3d",
+      "stratum": "BOTH_FAIL"
+    },
+    {
+      "case_id": "HARD1-MCP-019",
+      "category": "L1|apps:LightShop+LightTalk|tools:1-2",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop",
+          "LightTalk"
+        ],
+        "level": 1,
+        "tool_count": 2
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "0",
+      "source_sha256": "19afc5e873c2ad4d3bb98d07fc56c9361ffb41044006f2ee94dd8e969b750e40",
+      "stratum": "BOTH_PASS"
+    },
+    {
+      "case_id": "HARD1-MCP-020",
+      "category": "L1|apps:LightShop|tools:6+",
+      "family": "MCP",
+      "features": {
+        "apps": [
+          "LightShop"
+        ],
+        "level": 1,
+        "tool_count": 7
+      },
+      "source_hash_scope": "query_utf8",
+      "source_id": "18",
+      "source_sha256": "2de4fb97b2f73c91df58a90756f8b4847494acfd16ac3c923e381ba5bb7cff4d",
+      "stratum": "BOTH_PASS"
+    }
+  ],
+  "schema": "hard1-manifest-v1",
+  "selection_seed": "HARD1-v1-2026-09-02"
+}

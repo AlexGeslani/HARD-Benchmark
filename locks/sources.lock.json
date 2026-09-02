@@ -1,0 +1,44 @@
+{
+  "schema": "hard1-source-lock-v1",
+  "sources": {
+    "IF": {
+      "name": "IFBench",
+      "repository": "https://github.com/allenai/IFBench.git",
+      "commit": "db69a6f05689830b0068b8f1529ebcfd2f3b164c",
+      "license": "Apache-2.0",
+      "license_path": "LICENSE",
+      "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "artifacts": {
+        "data/IFBench_test.jsonl": "a2bf7b8e7ed11d39c65b4ec781da8b99663ed0121f97033d70fcecb61f8a9d85",
+        "uv.lock": "a77b776d0cc479194ab3a525a20c936805158008204dc0e4a739d164c7c98fdf"
+      }
+    },
+    "T3": {
+      "name": "tau2-bench (tau3 source condition)",
+      "repository": "https://github.com/sierra-research/tau2-bench.git",
+      "commit": "fc0055dc4e0a316c3f83133267fbd6faaa770992",
+      "license": "MIT",
+      "license_path": "LICENSE",
+      "license_sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+      "artifacts": {
+        "data/tau2/domains/airline/tasks.json": "ccd8ba737b4cc371415af70151187788f728d6108d0916e73bb4317b40542052",
+        "data/tau2/domains/retail/tasks.json": "8e03ebce7901bd6218e7a7dc3105faa9324091a68058f7fe61c65262868812e8",
+        "data/tau2/domains/telecom/tasks.json": "37e562e1ae3242577407e1303b1548bc64e7ea68e37d36173e6747990ceaf8a4",
+        "data/tau2/domains/banking_knowledge/tasks.json": "213c7f3e6dc0420b1184ee271e39e38c6ece3c43edfa362db49a560828ebd543",
+        "uv.lock": "62d3a8c4807b89e85703b3c03f2c21048a2da9736ca83d9af6f61adc74ac5314"
+      }
+    },
+    "MCP": {
+      "name": "ComplexMCP",
+      "repository": "https://github.com/ATH-MaaS/complex-mcp.git",
+      "commit": "617e963bd838bee5793a39e6b34165b79535828f",
+      "license": "MIT",
+      "license_path": "LICENSE",
+      "license_sha256": "95745791ee6d0d974b1971152cb7696f33894ee53b69ba04dcce460dab62db2d",
+      "artifacts": {
+        "benchmark/data/data.parquet": "57b636edc0f0083faea4b1d04637689e40cca48f3530170c9c176a3c0dad7607",
+        "requirements.txt": "7c023775aa74b36040c0690c8f3b9668731d3575b11a1d8c56c556a9debde0a7"
+      }
+    }
+  }
+}
