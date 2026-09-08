@@ -1,0 +1,133 @@
+{
+  "contract_version": "1.1.0",
+  "campaign_id": "replace-with-unique-campaign-id",
+  "campaign_kind": "full35B",
+  "campaign_case_ids": [
+    "HARD1-IF-001",
+    "HARD1-IF-002",
+    "HARD1-IF-003",
+    "HARD1-IF-004",
+    "HARD1-IF-005",
+    "HARD1-IF-006",
+    "HARD1-IF-007",
+    "HARD1-IF-008",
+    "HARD1-IF-009",
+    "HARD1-IF-010",
+    "HARD1-IF-011",
+    "HARD1-IF-012",
+    "HARD1-IF-013",
+    "HARD1-IF-014",
+    "HARD1-IF-015",
+    "HARD1-IF-016",
+    "HARD1-IF-017",
+    "HARD1-IF-018",
+    "HARD1-IF-019",
+    "HARD1-IF-020",
+    "HARD1-T3-001",
+    "HARD1-T3-002",
+    "HARD1-T3-003",
+    "HARD1-T3-004",
+    "HARD1-T3-005",
+    "HARD1-T3-006",
+    "HARD1-T3-007",
+    "HARD1-T3-008",
+    "HARD1-T3-009",
+    "HARD1-T3-010",
+    "HARD1-T3-011",
+    "HARD1-T3-012",
+    "HARD1-T3-013",
+    "HARD1-T3-014",
+    "HARD1-T3-015",
+    "HARD1-T3-016",
+    "HARD1-T3-017",
+    "HARD1-T3-018",
+    "HARD1-T3-019",
+    "HARD1-T3-020",
+    "HARD1-MCP-001",
+    "HARD1-MCP-002",
+    "HARD1-MCP-003",
+    "HARD1-MCP-004",
+    "HARD1-MCP-005",
+    "HARD1-MCP-006",
+    "HARD1-MCP-007",
+    "HARD1-MCP-008",
+    "HARD1-MCP-009",
+    "HARD1-MCP-010",
+    "HARD1-MCP-011",
+    "HARD1-MCP-012",
+    "HARD1-MCP-013",
+    "HARD1-MCP-014",
+    "HARD1-MCP-015",
+    "HARD1-MCP-016",
+    "HARD1-MCP-017",
+    "HARD1-MCP-018",
+    "HARD1-MCP-019",
+    "HARD1-MCP-020"
+  ],
+  "condition_label": "CANDIDATE_SELFPLAY_V1",
+  "simulator_condition": "candidate-selfplay",
+  "source_cache": ".hard1/sources",
+  "source_lock": "locks/sources.lock.json",
+  "evidence_root": "/absolute/durable/private/path/hard1-v1.1",
+  "workspace_root": ".hard1/v11-work",
+  "lease_root": "/tmp/hard1-v11-host-leases",
+  "resources": {
+    "IF": "candidate-slot-1",
+    "MCP": "candidate-slot-1",
+    "T3": "candidate-slot-1"
+  },
+  "runtime_profile": {
+    "serving_build": null,
+    "artifact": null,
+    "quantization": null,
+    "context_total": null,
+    "slots": null,
+    "template_sha256": null
+  },
+  "candidate": {
+    "endpoint": "https://candidate.example",
+    "model": "exact-candidate-model-id",
+    "api_key_env": "HARD1_MODEL_API_KEY",
+    "settings": {
+      "max_tokens": -1,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": 1.5,
+      "frequency_penalty": 0.0,
+      "timeout": null,
+      "num_retries": 0,
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        }
+      }
+    }
+  },
+  "simulator": {
+    "endpoint": "https://candidate.example",
+    "model": "openai/exact-candidate-model-id",
+    "api_key_env": "HARD1_MODEL_API_KEY",
+    "settings": {
+      "max_tokens": -1,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": 1.5,
+      "frequency_penalty": 0.0,
+      "timeout": null,
+      "num_retries": 0,
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        }
+      }
+    }
+  },
+  "native_max_turns": null,
+  "native_max_steps": null,
+  "case_timeout": null,
+  "simulation_seed": null
+}

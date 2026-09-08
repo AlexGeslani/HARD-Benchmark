@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
 authors = [{name = "Alex Geslani"}]
-dependencies = []
+dependencies = ["httpx==0.28.1"]
 classifiers = [
   "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
@@ -21,6 +21,10 @@ Repository = "https://github.com/AlexGeslani/HARD-Benchmark"
 
 [project.scripts]
 hard1 = "hard1.cli:main"
+hard1-v11 = "hard1.v11.runner:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/hard1"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/hard1/contracts/hard1-v1.1.json" = "hard1/contracts/hard1-v1.1.json"

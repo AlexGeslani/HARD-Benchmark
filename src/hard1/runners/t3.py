@@ -12,7 +12,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from hard1.runners.common import api_key, append_jsonl, canonical, read_jsonl, selected_cases, sha, utc_now
 
-SIMULATOR_MODEL = "openai/gpt-4.1-2025-04-14"
 DOMAINS = ("airline", "retail", "telecom", "banking_knowledge")
 
 
@@ -29,8 +28,6 @@ def main() -> int:
     parser.add_argument("--max-steps", type=int, default=100)
     args = parser.parse_args()
 
-    if not os.environ.get("OPENAI_API_KEY"):
-        raise RuntimeError("HARD1-T3 canonical simulator requires OPENAI_API_KEY")
     candidate_key = api_key(args.api_key_env)
     sys.path.insert(0, str(args.source / "src"))
     from tau2.data_model.simulation import TextRunConfig
@@ -62,11 +59,8 @@ def main() -> int:
         "api_base": endpoint, "api_key": candidate_key, "temperature": 0, "seed": 0,
         "timeout": args.timeout, "max_tokens": args.max_tokens, "num_retries": 0,
     }
-    simulator_args = {
-        "temperature": 0, "seed": 0, "timeout": args.timeout,
-        "max_tokens": 2048, "num_retries": 0,
-    }
-    evaluator_nl_assertions.DEFAULT_LLM_NL_ASSERTIONS = SIMULATOR_MODEL
+    simulator_args = dict(candidate_args)
+    evaluator_nl_assertions.DEFAULT_LLM_NL_ASSERTIONS = candidate_model
     evaluator_nl_assertions.DEFAULT_LLM_NL_ASSERTIONS_ARGS = dict(simulator_args)
 
     args.out.mkdir(parents=True, exist_ok=True)
@@ -76,10 +70,10 @@ def main() -> int:
         "schema": "hard1-t3-run-v1", "created_at": utc_now(), "family": "T3",
         "model": args.model, "endpoint": args.endpoint, "temperature": 0, "seed": 0,
         "max_tokens": args.max_tokens, "max_steps": args.max_steps,
-        "simulator_model": SIMULATOR_MODEL, "simulator_max_tokens": 2048,
+        "simulator_model": args.model, "simulator_max_tokens": args.max_tokens,
         "natural_language_assertion_judge": "disabled-by-task-selection",
         "case_count": len(scheduled), "candidate_credential_env": args.api_key_env,
-        "simulator_credential_env": "OPENAI_API_KEY",
+        "simulator_credential_env": args.api_key_env,
     }) + "\n")
 
     for position, (domain, task, case) in enumerate(scheduled, 1):
@@ -89,7 +83,7 @@ def main() -> int:
         config = TextRunConfig(
             domain=domain, task_split_name=split, task_ids=[str(task.id)],
             agent="llm_agent", user="user_simulator",
-            llm_agent=candidate_model, llm_user=SIMULATOR_MODEL,
+            llm_agent=candidate_model, llm_user=candidate_model,
             llm_args_agent=candidate_args, llm_args_user=simulator_args,
             max_steps=args.max_steps, timeout=args.timeout, num_trials=1,
             max_concurrency=1, max_retries=0, hallucination_retries=0,

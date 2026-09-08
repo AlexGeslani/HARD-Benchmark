@@ -1,6 +1,16 @@
-# HARD1
+# Hard1
 
-**HARD1** is the first release of the **Hard-tail Agentic Reliability Dataset**: a frozen 60-case evaluation slice for instruction following, conversational tool use, and stateful multi-tool execution.
+**Hard1 v1.0** is the current public release of the Hard-tail Agentic Reliability
+Dataset. Its runtime/evidence lineage retains the internal contract identifier `1.1.0`
+and historical `HARD2` identifiers byte-for-byte; those are immutable
+compatibility and provenance identifiers, not the public release version.
+
+The successor runner is available through `hard1 v11` and the compatibility
+command `hard1-v11`. See [the protocol](docs/PROTOCOL.md),
+[reproducibility guide](docs/REPRODUCIBILITY.md), and
+[example configuration](config/hard1-v1.1.example.json).
+
+**Hard1** is the successor release of the **Hard-tail Agentic Reliability Dataset**: a frozen 60-case evaluation slice for instruction following, conversational tool use, and stateful multi-tool execution. **Hard0** preserves the predecessor generation unchanged.
 
 HARD1 is intentionally small and auditable. It publishes source IDs, hashes, deterministic selection inputs, evaluator contracts, and materialization logic—not copied prompts, gold answers, source datasets, or model transcripts.
 
@@ -82,11 +92,15 @@ uv run hard1 run \
 
 Use `--dry-run` first to inspect the command without dispatching inference. Family-specific environment preparation and transport requirements are documented in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
-HARD1-T3 has one deliberate exception to provider neutrality: its user simulator is part of the frozen benchmark condition and is pinned to OpenAI `gpt-4.1-2025-04-14`. Candidate model serving remains provider-neutral. Selected T3 tasks are programmatic-only; natural-language assertion judging is forbidden.
+Historical Hard0 T3 pinned a fixed reference simulator. **Hard1 v1.0 uses candidate-selfplay:** use the tested model for both candidate and simulator, retaining separate role telemetry and identical protocol/settings across model campaigns. Do not aggregate with historical fixed-reference results. Selected T3 tasks remain programmatic-only; natural-language assertion judging is forbidden.
 
 ## Construction labels
 
-The exact stratum names `LUNA_FAIL_ONLY`, `QWEN_FAIL_ONLY`, `BOTH_FAIL`, and `BOTH_PASS` are stable construction labels. They refer to two archived screening systems used only to define the hard tail. This repository does not map those labels to private model aliases, providers, endpoints, or transcripts. Construction-system performance on HARD1 is in-sample selection evidence, not an independent benchmark result.
+Public reports use the provider-neutral stratum names `SCREEN_A_FAIL_ONLY`,
+`SCREEN_B_FAIL_ONLY`, `BOTH_FAIL`, and `BOTH_PASS`. Internal custody may retain
+legacy construction labels for immutable lineage; publication maps them without
+rewriting the underlying evidence. Construction-system performance is in-sample
+selection evidence, not an independent benchmark result.
 
 ## Scope and non-goals
 

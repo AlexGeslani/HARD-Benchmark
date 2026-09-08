@@ -1,6 +1,8 @@
 .DS_Store
 .venv/
 .hard1/
+.hard1-assets/
+.luna-bridge/
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -9,3 +11,17 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Private local campaign control; never part of public Hard1.
+bridge-requirements.txt
+scripts/hard2_watchdog.py
+scripts/luna_bridge.py
+src/hard1/v11/discovery.py
+src/hard1/v11/luna.py
+tests/test_hard2_discovery.py
+tests/test_luna_campaign.py
+tests/test_v11_full_telemetry.py
+tests/test_v11_if019_repair.py
+docs/HARD1.1-*.md
+docs/HARD2-*.md
+docs/REPRODUCIBILITY-V1.1.md

@@ -78,6 +78,9 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--python", default=sys.executable)
     run.add_argument("--api-key-env", default="HARD1_MODEL_API_KEY")
     run.add_argument("--dry-run", action="store_true")
+
+    v11 = sub.add_parser("v11", help="HARD1 v1.1 run/export/verify entry point")
+    v11.add_argument("args", nargs=argparse.REMAINDER)
     return parser
 
 
@@ -135,6 +138,9 @@ def main(argv: Sequence[str] | None = None) -> int:
             if args.api_key_env not in os.environ:
                 raise ValueError(f"missing credential environment variable: {args.api_key_env}")
             subprocess.run(command, check=True)
+    elif args.command == "v11":
+        from .v11.runner import main as v11_main
+        return v11_main(args.args)
     return 0
 
 

@@ -1,4 +1,8 @@
-# Reproducibility and endpoint contract
+# Hard1 v1.0 reproducibility and endpoint contract
+
+The public release version is `1.0.0`. Runtime records retain internal contract
+identifier `1.1.0`, module path `hard1.v11`, and historical case/event identifiers
+so prior evidence remains verifiable.
 
 ## Locked components
 
@@ -41,7 +45,12 @@ One user message per case; default output budget 8,192 tokens. The exact pinned 
 
 ### T3
 
-The candidate endpoint must support OpenAI-compatible structured tool calling through LiteLLM. The frozen user simulator is `openai/gpt-4.1-2025-04-14`, with temperature `0`, seed `0`, and 2,048 output tokens. It reads `OPENAI_API_KEY`. Candidate calls use temperature `0`, seed `0`, 8,192 output tokens, at most 100 steps, one trial, and no runner retries.
+The candidate endpoint must support OpenAI-compatible structured tool calling
+through LiteLLM. Hard1 uses candidate-selfplay: the tested condition serves both
+candidate and simulator roles through separate conversations and role telemetry.
+The exact model, endpoint, settings, output policy, and seed policy must be explicit
+in the private run configuration and bound into campaign identity. Automatic retries
+and route fallback are forbidden.
 
 Selected tasks have no natural-language assertion basis. If one appears at runtime, execution stops as an integrity failure.
 

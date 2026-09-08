@@ -1,0 +1,21 @@
+{
+  "schema": "hard1-contract-v1.1",
+  "contract_version": "1.1.0",
+  "manifest": {
+    "path": "manifests/hard1-v1.json",
+    "sha256": "40a60bcdb31ee11a231aa03a425866750428c852981e7fcc7124c71d124538c8",
+    "case_count": 60,
+    "family_counts": {"IF": 20, "MCP": 20, "T3": 20}
+  },
+  "receipt_schema": "hard1-receipt-v1.1",
+  "custody_events": ["STARTED", "COMPLETE", "INTERRUPTED"],
+  "required_identity": ["contract_version", "condition_label", "simulator_condition", "runtime_profile_fingerprint", "campaign_id", "case_id", "attempt_id"],
+  "policy": {"no_progress": "OBSERVE_ONLY", "calibration_grid": [4, 5, 6, 8, 10]},
+  "families": {
+    "IF": {"protocol": "strict-single-answer", "native_contract": "ifbench.json"},
+    "MCP": {"protocol": "native-tools-and-state-judge", "native_contract": "complexmcp.json"},
+    "T3": {"protocol": "native-programmatic-evaluator-mixed-message-overlay", "native_contract": "t3.json", "simulator_mode": "candidate-selfplay"}
+  },
+  "retry": {"automatic_attempts": 1, "fallback": false},
+  "telemetry": {"unknown": null, "raw_private": true, "automatic_expiry": false}
+}
