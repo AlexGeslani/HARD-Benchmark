@@ -23,6 +23,12 @@ Repository = "https://github.com/AlexGeslani/HARD-Benchmark"
 hard1 = "hard1.cli:main"
 hard1-v11 = "hard1.v11.runner:main"
 
+[tool.hatch.build]
+exclude = [
+  "/.git",
+  "/.git/**",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/hard1"]
 
