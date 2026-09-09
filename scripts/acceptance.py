@@ -74,7 +74,7 @@ def main() -> int:
             "--receipts", ".hard1/mock/receipts.jsonl", "--out", ".hard1/mock/score.json",
         ], clone)
         run([uv, "run", "hard1", "report", "--score", ".hard1/mock/score.json", "--out", ".hard1/mock/report.md"], clone)
-        tests = run([uv, "run", "python", "-m", "unittest", "discover", "-s", "tests", "-v"], clone)
+        tests = run([uv, "run", "--with", "pytest", "pytest", "-q"], clone)
         audit = run([uv, "run", "python", "scripts/audit_tree.py"], clone)
         score = json.loads((clone / ".hard1/mock/score.json").read_text())
         result = {

@@ -7,7 +7,7 @@
     "locks/sources.lock.json": "21db313a4d1c1d9add61e9397a8dd1d65375a9e4007c5d623eda4b33899480a3",
     "manifests/hard1-v1.json": "40a60bcdb31ee11a231aa03a425866750428c852981e7fcc7124c71d124538c8",
     "pyproject.toml": "1c005e1a25acd262739e4d5ce0db1545395f3db2f60c6b5d0edded349c3b7102",
-    "scripts/acceptance.py": "b9ae164e9b05d54392be421b7292ae892233cc7ced9aa02b4dc22407485063c0",
+    "scripts/acceptance.py": "5e2f5de6e42f55138e5e85bc328e5547d94c3f72da6212c9ec3890e87b7a6ce2",
     "scripts/audit_tree.py": "1d25debc196cb691c72ec6f179f3048df931f087a1d8ebff50f28f2e5814f9e8",
     "src/hard1/__init__.py": "2ea72fc88e7fa6e8da46951ae824dd7fe17cb8042287436935c753a54079d250",
     "src/hard1/cli.py": "4ae748a14f3a3b0b9f227a5b7e967f5461c9bc54d6aaba38002bcb709babfd4a",
@@ -50,6 +50,6 @@
     "tests/test_v11_t3_selfplay.py": "de3e243f72c0459c740ba858bee0cb0148d5754c04eaca054a47a28790fda3a2",
     "uv.lock": "35cd020fb74e6861a51dd2d0b6c0239e8c02eec2fbeba2dc471521d749f1f9bc"
   },
-  "harness_identity_sha256": "f17fe1d0baa80cfd488b558e822c444a5ec354b9e2a103be5ffdd6d57efe2ddf",
+  "harness_identity_sha256": "06d053f19dee2dadab79f7e78b80845582f32a589a0b1a0ccbca1cae1383defc",
   "schema": "hard1-harness-lock-v1"
 }
