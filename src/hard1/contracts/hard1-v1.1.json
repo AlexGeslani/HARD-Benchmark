@@ -3,7 +3,7 @@
   "contract_version": "1.1.0",
   "manifest": {
     "path": "manifests/hard1-v1.json",
-    "sha256": "40a60bcdb31ee11a231aa03a425866750428c852981e7fcc7124c71d124538c8",
+    "sha256": "25d7cf1f0832b494a11e8b2af9d2724a8f9de97a27e96954ca9980eab62c3ebb",
     "case_count": 60,
     "family_counts": {"IF": 20, "MCP": 20, "T3": 20}
   },

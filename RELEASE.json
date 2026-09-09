@@ -6,15 +6,15 @@
     "T3": 20
   },
   "identities": {
-    "candidate_universe_sha256": "d335377096029f1328ab69722f63a1e4f2313bbb480e9317b9a13ad1e8bbb800",
-    "harness_identity_sha256": "06d053f19dee2dadab79f7e78b80845582f32a589a0b1a0ccbca1cae1383defc",
-    "harness_lock_sha256": "a120ff723ed88635cb74e48b552bc6d9e7f609ff4120d16d05df81f374e10652",
-    "manifest_sha256": "40a60bcdb31ee11a231aa03a425866750428c852981e7fcc7124c71d124538c8",
+    "candidate_universe_sha256": "c53fe6c55f0529bf8139ee3a6e5040f70da5955228f512f24d743691e63cf459",
+    "harness_identity_sha256": "27f984d7f2f7d0fd92f5ee08f6d3091be11fe212b55f110c8dd40439798cc553",
+    "harness_lock_sha256": "5f6bdfa40d32612a8dc9ef8f2f83b1a65d5c50d2750ffbf6afe991e3014d0a38",
+    "manifest_sha256": "25d7cf1f0832b494a11e8b2af9d2724a8f9de97a27e96954ca9980eab62c3ebb",
     "mcp_query_index_sha256": "cf3b163ac8543065887816e5308208965d5c0afe425c8fe182231e37f8885618",
     "project_uv_lock_sha256": "35cd020fb74e6861a51dd2d0b6c0239e8c02eec2fbeba2dc471521d749f1f9bc",
-    "selection_policy_sha256": "6ef79e160ae1489b087159c1e25e8b447f46990c8fdf56ff259505ed724b4f2d",
+    "selection_policy_sha256": "e5b88e0bb8204a45fb61dd01291ae084c6a73afe2508c530177dcf721a59b228",
     "source_lock_sha256": "21db313a4d1c1d9add61e9397a8dd1d65375a9e4007c5d623eda4b33899480a3",
-    "tracked_payload_excluding_release_sha256": "3a99d5b02ec4ca36d17b72b86f06f8195670201380ae7f899ab152e9571a3eda"
+    "tracked_payload_excluding_release_sha256": "b202bfa6f560bcf87eee55009aa855d39da517e6b3d4b9a94cfbca106c5eeadb"
   },
   "inference_requests_during_freeze": {
     "bonsai": 0,
@@ -32,20 +32,20 @@
     "IF": {
       "BOTH_FAIL": 9,
       "BOTH_PASS": 2,
-      "LUNA_FAIL_ONLY": 1,
-      "QWEN_FAIL_ONLY": 8
+      "SCREEN_A_FAIL_ONLY": 1,
+      "SCREEN_B_FAIL_ONLY": 8
     },
     "MCP": {
       "BOTH_FAIL": 9,
       "BOTH_PASS": 2,
-      "LUNA_FAIL_ONLY": 1,
-      "QWEN_FAIL_ONLY": 8
+      "SCREEN_A_FAIL_ONLY": 1,
+      "SCREEN_B_FAIL_ONLY": 8
     },
     "T3": {
       "BOTH_FAIL": 9,
       "BOTH_PASS": 2,
-      "LUNA_FAIL_ONLY": 4,
-      "QWEN_FAIL_ONLY": 5
+      "SCREEN_A_FAIL_ONLY": 4,
+      "SCREEN_B_FAIL_ONLY": 5
     }
   },
   "version": "1.0.0"

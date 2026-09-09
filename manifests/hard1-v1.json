@@ -13,7 +13,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "57",
       "source_sha256": "68caaaae0008bd5e74cb849afd306efa8b19dc2f8a0e3632a6673a6f4c1aae71",
-      "stratum": "LUNA_FAIL_ONLY"
+      "stratum": "SCREEN_A_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-002",
@@ -28,7 +28,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "52",
       "source_sha256": "8ff781a3ec64c1ef67cdc8bcec7f61fd47eeb746007b9bd2f0200c25457ff7d7",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-003",
@@ -43,7 +43,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "281",
       "source_sha256": "21157f6e7790364c8b774a0966bb83d7754357768c3b6cde279cb9702f07a821",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-004",
@@ -58,7 +58,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "279",
       "source_sha256": "9ee60b05ec612f893bd66d536509a3c32f04a36cc55f78204d694174aedd44db",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-005",
@@ -74,7 +74,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "24",
       "source_sha256": "d67b16785992ced59b3492624111e2f569cac401eee2843022e137e51d1736f9",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-006",
@@ -89,7 +89,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "30",
       "source_sha256": "ff54a4d6443cae2dfc79df18334d7cd19e53341741148847bcf8b403b367f557",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-007",
@@ -104,7 +104,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "5",
       "source_sha256": "b4cf112fe0d0a8cc66e74b55cd46bceb33486f90c9d4630bfdf615349d582f81",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-008",
@@ -119,7 +119,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "280",
       "source_sha256": "b4212986b88444ad26854ee0fd5905bf581137947a6ea72bb3bda4e7a4d91f39",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-009",
@@ -134,7 +134,7 @@
       "source_hash_scope": "canonical_json_record",
       "source_id": "273",
       "source_sha256": "189f17a5064768b0c3370789d56e1e911df4bd6b40b6dc83eb6b1b9a0fc2cba0",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-IF-010",
@@ -320,7 +320,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "retail:33",
       "source_sha256": "3cbf1110587064148947539db2f8916417bff9a0bf336e06a57b8d5ab4555fc5",
-      "stratum": "LUNA_FAIL_ONLY"
+      "stratum": "SCREEN_A_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-002",
@@ -338,7 +338,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "airline:17",
       "source_sha256": "d83db4e78ae317b5a20d7a3edb1bd0d04c828cd9b9fb04d9fd8be70a755cade0",
-      "stratum": "LUNA_FAIL_ONLY"
+      "stratum": "SCREEN_A_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-003",
@@ -356,7 +356,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "airline:39",
       "source_sha256": "a455a77004ea68543172d7c7fdacae21cb36a2a53aabc93fdc5d3dd084c64e7e",
-      "stratum": "LUNA_FAIL_ONLY"
+      "stratum": "SCREEN_A_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-004",
@@ -373,7 +373,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "banking_knowledge:task_033",
       "source_sha256": "570361e6318a2c12e908428b1aa547cbcc580af6617991f762c56eca9d563150",
-      "stratum": "LUNA_FAIL_ONLY"
+      "stratum": "SCREEN_A_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-005",
@@ -391,7 +391,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "airline:41",
       "source_sha256": "68046a6339af2a905b2e85b11ee323ca1f03139cf058ac27322932a6d281d2bb",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-006",
@@ -408,7 +408,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "telecom:[mobile_data_issue]bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Hard]",
       "source_sha256": "68e6999a530548ccce6503568d9ab45e010e15b69ea236352e59cb8fb79764f3",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-007",
@@ -425,7 +425,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "banking_knowledge:task_012",
       "source_sha256": "9f8b3e8d3c1b109d595b58d36fa6ef88ff1be4c0ef3479888c7a11c4f67eaef5",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-008",
@@ -442,7 +442,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "banking_knowledge:task_035",
       "source_sha256": "8a1351c86cbdc778b586cab4a25fc9eccbf965818189181d389865ac97a4d2d4",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-009",
@@ -460,7 +460,7 @@
       "source_hash_scope": "canonical_json_task_record",
       "source_id": "airline:12",
       "source_sha256": "3b08fff117282db541608b0ca87950d1e0bceb6bc635b995ba26faa6f70905cd",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-T3-010",
@@ -660,7 +660,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "4",
       "source_sha256": "65c8a8e9b2100bab1ee90775cf51553ae9523c5249383fba4c7433a49926f039",
-      "stratum": "LUNA_FAIL_ONLY"
+      "stratum": "SCREEN_A_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-002",
@@ -676,7 +676,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "35",
       "source_sha256": "0b3b4b845edf10371b64ec4d084cd0772de13d4f565e381c8bff49ad39727263",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-003",
@@ -692,7 +692,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "16",
       "source_sha256": "d4832c6ba114fb39bb3344831353c681302179ea64693543319f8fc9fd4d5ffc",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-004",
@@ -709,7 +709,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "31",
       "source_sha256": "5580d0a6f69992587e660d8abca54552b7987bef5b2d98089a75ea268c0a1d5c",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-005",
@@ -726,7 +726,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "2",
       "source_sha256": "ea3299b94fd14fa683b3037e195c98f996d0a412e693e62e0db38e32f9b4e420",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-006",
@@ -742,7 +742,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "5",
       "source_sha256": "b561fb4e152123113a9a762edc64bddb9d35d04ecd6c34fa43bc6795229c9c3a",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-007",
@@ -758,7 +758,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "20",
       "source_sha256": "d30077fba85139dc423dec0b595b01e78d1415af39bf424db27b96f98dcc5b47",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-008",
@@ -774,7 +774,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "17",
       "source_sha256": "78ee5c1bec4276598c28fe6436ceb88f62ee9d6994f75baed8838cb898b22a41",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-009",
@@ -791,7 +791,7 @@
       "source_hash_scope": "query_utf8",
       "source_id": "41",
       "source_sha256": "89a6200bbe5ee3a44715086d35acd1b8dcb6c16234f54eeb487354254eeac0b7",
-      "stratum": "QWEN_FAIL_ONLY"
+      "stratum": "SCREEN_B_FAIL_ONLY"
     },
     {
       "case_id": "HARD1-MCP-010",

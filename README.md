@@ -10,7 +10,7 @@ command `hard1-v11`. See [the protocol](docs/PROTOCOL.md),
 [reproducibility guide](docs/REPRODUCIBILITY.md), and
 [example configuration](config/hard1-v1.1.example.json).
 
-**Hard1** is the successor release of the **Hard-tail Agentic Reliability Dataset**: a frozen 60-case evaluation slice for instruction following, conversational tool use, and stateful multi-tool execution. **Hard0** preserves the predecessor generation unchanged.
+**Hard1** is the successor release of the **Hard-tail Agentic Reliability Dataset**: a frozen 60-case evaluation slice for instruction following, conversational tool use, and stateful multi-tool execution. **Hard0** preserves the predecessor generation unchanged at tag `hard0-v1.0.0`.
 
 HARD1 is intentionally small and auditable. It publishes source IDs, hashes, deterministic selection inputs, evaluator contracts, and materialization logic—not copied prompts, gold answers, source datasets, or model transcripts.
 

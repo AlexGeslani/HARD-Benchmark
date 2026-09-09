@@ -35,14 +35,14 @@ T3 eligibility excludes every task whose reward basis contains `NL_ASSERTION`. T
 2. applies the exact family/stratum quotas in `construction/policy.json`;
 3. groups each quota pool by its model-independent structural category;
 4. round-robins categories;
-5. resolves ties with SHA-256 over the public seed, family, stratum, and source ID;
+5. resolves ties with committed opaque SHA-256 selection keys frozen before the provider-neutral stratum-label projection;
 6. emits stable family-local case IDs.
 
 The result is byte-reproducible under the frozen inputs. The committed acceptance procedure regenerates the manifest twice and compares both outputs with the tracked manifest.
 
 ## Frozen topology
 
-| Family | `LUNA_FAIL_ONLY` | `QWEN_FAIL_ONLY` | `BOTH_FAIL` | `BOTH_PASS` |
+| Family | `SCREEN_A_FAIL_ONLY` | `SCREEN_B_FAIL_ONLY` | `BOTH_FAIL` | `BOTH_PASS` |
 |---|---:|---:|---:|---:|
 | IF | 1 | 8 | 9 | 2 |
 | T3 | 4 | 5 | 9 | 2 |

@@ -4,7 +4,7 @@ import hashlib
 from collections import Counter, defaultdict
 from typing import Any
 
-STRATA = ("LUNA_FAIL_ONLY", "QWEN_FAIL_ONLY", "BOTH_FAIL", "BOTH_PASS")
+STRATA = ("SCREEN_A_FAIL_ONLY", "SCREEN_B_FAIL_ONLY", "BOTH_FAIL", "BOTH_PASS")
 FAMILIES = ("IF", "T3", "MCP")
 
 
@@ -13,6 +13,13 @@ class SelectionError(ValueError):
 
 
 def _stable_key(seed: str, row: dict[str, Any]) -> str:
+    frozen = row.get("selection_key")
+    if frozen is not None:
+        if not isinstance(frozen, str) or len(frozen) != 64 or any(
+            character not in "0123456789abcdef" for character in frozen
+        ):
+            raise SelectionError("selection_key must be a lowercase SHA-256 digest")
+        return frozen
     text = f"{seed}\0{row['family']}\0{row['stratum']}\0{row['source_id']}"
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -66,7 +73,11 @@ def select_manifest(candidates: list[dict[str, Any]], policy: dict[str, Any]) ->
             key=lambda row: (STRATA.index(row["stratum"]), _stable_key(seed, row)),
         )
         for index, row in enumerate(ordered, 1):
-            public = {key: value for key, value in row.items() if key != "eligible"}
+            public = {
+                key: value
+                for key, value in row.items()
+                if key not in {"eligible", "selection_key"}
+            }
             public["case_id"] = f"HARD1-{family}-{index:03d}"
             cases.append(public)
 

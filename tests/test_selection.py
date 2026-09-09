@@ -10,8 +10,8 @@ POLICY = {
     "seed": "fixture-seed",
     "family_quotas": {
         family: {
-            "LUNA_FAIL_ONLY": 1,
-            "QWEN_FAIL_ONLY": 2,
+            "SCREEN_A_FAIL_ONLY": 1,
+            "SCREEN_B_FAIL_ONLY": 2,
             "BOTH_FAIL": 2,
             "BOTH_PASS": 1,
         }

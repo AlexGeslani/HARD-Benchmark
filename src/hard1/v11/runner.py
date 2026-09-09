@@ -22,7 +22,7 @@ from hard1.v11.families import run_if, run_mcp, run_t3
 from hard1.v11.scheduler import _process_start, acquire
 from hard1.v11.telemetry import CLASSIFIER_VERSION, EvidenceLog, OpenAITransport, export_requests, redact
 
-MANIFEST_SHA = "40a60bcdb31ee11a231aa03a425866750428c852981e7fcc7124c71d124538c8"
+MANIFEST_SHA = "25d7cf1f0832b494a11e8b2af9d2724a8f9de97a27e96954ca9980eab62c3ebb"
 REQUIRED = tuple(load_contract()["required_identity"])
 SOURCE_LOCK_SHA = "21db313a4d1c1d9add61e9397a8dd1d65375a9e4007c5d623eda4b33899480a3"
 CAMPAIGN_KINDS = {"engineering-pilot", "full35B", "full27B"}
