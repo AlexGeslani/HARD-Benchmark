@@ -23,11 +23,11 @@
     "sol": 0
   },
   "publication": {
-    "github_remote_created": false,
-    "published": false
+    "github_remote_created": true,
+    "published": true
   },
   "schema": "hard1-release-v1",
-  "status": "LOCAL_FROZEN_NOT_PUBLISHED",
+  "status": "PUBLISHED",
   "strata": {
     "IF": {
       "BOTH_FAIL": 9,
