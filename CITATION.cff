@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: HARD1 — Hard-tail Agentic Reliability Dataset
-message: If you use HARD1, cite this software and the upstream benchmarks listed in THIRD_PARTY_NOTICES.md.
+title: Hard0.1 — Hard-tail Agentic Reliability Dataset
+message: If you use Hard0.1, cite this software and the upstream benchmarks listed in THIRD_PARTY_NOTICES.md.
 type: software
 authors:
   - family-names: Geslani

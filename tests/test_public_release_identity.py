@@ -15,7 +15,8 @@ def test_public_release_identity_preserves_internal_contract_lineage():
     assert project["project"]["version"] == "1.0.0"
     assert CONTRACT_VERSION == "1.1.0"
     readme = (ROOT / "README.md").read_text()
-    assert "Hard1 v1.0" in readme
+    assert "**Hard0.1** is the current public release" in readme
+    assert "initially published as Hard1 v1.0" in readme
     assert "internal contract identifier `1.1.0`" in readme
     t3 = load_contract()["families"]["T3"]
     assert t3["simulator_mode"] == "candidate-selfplay"

@@ -1,8 +1,8 @@
-# HARD1 methodology
+# Hard0.1 methodology
 
 ## Design target
 
-HARD1 freezes 60 cases—20 from each of IFBench, τ³, and ComplexMCP. It is intended to be harder than each full source population while retaining capable-model runway and a small number of known-pass harness canaries.
+Hard0.1 freezes 60 cases—20 from each of IFBench, τ³, and ComplexMCP. It is intended to be harder than each full source population while retaining capable-model runway and a small number of known-pass harness canaries.
 
 Selection priorities, in order, were:
 
@@ -73,7 +73,7 @@ All overlay source, patch, and resulting hashes are part of the harness identity
 
 ## Limitations
 
-- HARD1 is deliberately small and should be reported with all three family scores, not only Overall.
-- Construction strata were derived from two archived screening systems. Their HARD1 scores are in-sample and unsuitable as independent comparison claims.
+- Hard0.1 is deliberately small and should be reported with all three family scores, not only Overall.
+- Construction strata were derived from two archived screening systems. Their Hard0.1 scores are in-sample and unsuitable as independent comparison claims.
 - The T3 simulator is stochastic infrastructure despite deterministic request settings; benchmark identity pins the model and parameters, not impossible bit-level API determinism.
 - OpenAI-compatible endpoints differ in seed and tool-call support. Unsupported required semantics are infrastructure incompatibility, not model failure.
