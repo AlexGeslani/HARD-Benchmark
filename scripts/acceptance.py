@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Clean-clone offline acceptance for the frozen HARD1 repository."""
+"""Clean-clone offline acceptance for the frozen Hard0.1 repository."""
 from __future__ import annotations
 
 import hashlib

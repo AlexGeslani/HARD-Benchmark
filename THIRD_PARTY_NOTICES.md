@@ -1,6 +1,6 @@
 # Third-party notices
 
-HARD1 does **not** redistribute the benchmark datasets listed below. `hard1 materialize` obtains them from their public upstream repositories at exact commits; hashes verify identity. Upstream terms continue to govern the fetched content.
+Hard0.1 does **not** redistribute the benchmark datasets listed below. The legacy `hard1 materialize` command obtains them from their public upstream repositories at exact commits; hashes verify identity. Upstream terms continue to govern the fetched content.
 
 ## IFBench
 
@@ -10,7 +10,7 @@ HARD1 does **not** redistribute the benchmark datasets listed below. `hard1 mate
 - Data license stated by upstream: ODC-BY-1.0, with Ai2 Responsible Use Guidelines and separate terms for third-party-model output data
 - Citation: Valentina Pyatkin et al., “Generalizing Verifiable Instruction Following,” 2025.
 
-HARD1 tracks source IDs, record hashes, instruction-category metadata, and evaluator compatibility code. It does not copy IFBench prompts or dataset rows.
+Hard0.1 tracks source IDs, record hashes, instruction-category metadata, and evaluator compatibility code. It does not copy IFBench prompts or dataset rows.
 
 ## τ²/τ³ benchmark source
 
@@ -22,7 +22,7 @@ HARD1 tracks source IDs, record hashes, instruction-category metadata, and evalu
   - Shunyu Yao et al., “τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains,” arXiv:2406.12045, 2024.
   - Quan Shi et al., “τ-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge,” arXiv:2603.04370, 2026.
 
-HARD1 tracks task IDs, hashes, domains, programmatic reward-basis categories, and aggregate structural counts. It does not copy tasks, policies, databases, conversations, or expected actions.
+Hard0.1 tracks task IDs, hashes, domains, programmatic reward-basis categories, and aggregate structural counts. It does not copy tasks, policies, databases, conversations, or expected actions.
 
 ## ComplexMCP
 
@@ -31,8 +31,8 @@ HARD1 tracks task IDs, hashes, domains, programmatic reward-basis categories, an
 - Repository license: MIT
 - Citation: Yuanyang Li et al., “ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox,” arXiv:2605.10787, 2026.
 
-HARD1 tracks zero-based row IDs, query hashes, application/category metadata, and evaluator compatibility code. It does not copy Parquet rows, queries, expected environments, tool descriptions, or model trajectories.
+Hard0.1 tracks zero-based row IDs, query hashes, application/category metadata, and evaluator compatibility code. It does not copy Parquet rows, queries, expected environments, tool descriptions, or model trajectories.
 
-## HARD1 code
+## Hard0.1 code
 
-Original HARD1 selection, verification, runner, scoring, and reporting code is licensed under Apache-2.0. Small compatibility patches are distributed solely to reproduce evaluation behavior against the named open-source revisions; their use remains subject to the corresponding upstream license.
+Original Hard0.1 selection, verification, runner, scoring, and reporting code is licensed under Apache-2.0. Small compatibility patches are distributed solely to reproduce evaluation behavior against the named open-source revisions; their use remains subject to the corresponding upstream license.

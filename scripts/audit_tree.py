@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed tracked-tree audit for public HARD1 packaging."""
+"""Fail-closed tracked-tree audit for public Hard0.1 packaging."""
 from __future__ import annotations
 
 import json

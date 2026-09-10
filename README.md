@@ -1,28 +1,40 @@
-# Hard1
+# Hard0.1
 
-**Hard1 v1.0** is the current public release of the Hard-tail Agentic Reliability
-Dataset. Its runtime/evidence lineage retains the internal contract identifier `1.1.0`
-and historical `HARD2` identifiers byte-for-byte; those are immutable
-compatibility and provenance identifiers, not the public release version.
+**Hard0.1** is the current public release of the Hard-tail Agentic Reliability
+Dataset. It was initially published as Hard1 v1.0 and was reclassified before
+construction of a new Hard1 generation. Its runtime/evidence lineage retains the
+historical `HARD1-*` case IDs and `hard1` package/CLI names.
+The internal contract identifier `1.1.0` is preserved, as are historical `HARD2`
+identifiers. These are immutable compatibility and provenance identifiers, not the
+current public name.
 
-The successor runner is available through `hard1 v11` and the compatibility
-command `hard1-v11`. See [the protocol](docs/PROTOCOL.md),
+The preserved runner is available through the legacy `hard1 v11` and
+`hard1-v11` compatibility commands. See [the protocol](docs/PROTOCOL.md),
 [reproducibility guide](docs/REPRODUCIBILITY.md), and
 [example configuration](config/hard1-v1.1.example.json).
 
-**Hard1** is the successor release of the **Hard-tail Agentic Reliability Dataset**: a frozen 60-case evaluation slice for instruction following, conversational tool use, and stateful multi-tool execution. **Hard0** preserves the predecessor generation unchanged at tag `hard0-v1.0.0`.
+**Hard0.1** is a frozen 60-case evaluation slice for instruction following,
+conversational tool use, and stateful multi-tool execution. **Hard0** preserves
+the predecessor generation unchanged at tag `hard0-v1.0.0`. The **Hard1** name
+is reserved for the next benchmark generation.
 
-HARD1 is intentionally small and auditable. It publishes source IDs, hashes, deterministic selection inputs, evaluator contracts, and materialization logic—not copied prompts, gold answers, source datasets, or model transcripts.
+Hard0.1 is intentionally small and auditable. It publishes source IDs, hashes,
+deterministic selection inputs, evaluator contracts, and materialization logic—not
+copied prompts, gold answers, source datasets, or model transcripts.
 
 ## Composition
 
 | Family | Cases | What it measures | Binary pass condition |
 |---|---:|---|---|
-| HARD1-IF | 20 | Verifiable instruction following | Every strict IFBench instruction check passes |
-| HARD1-T3 | 20 | Multi-turn agent/user tool interaction | Upstream programmatic reward is exactly `1.0` |
-| HARD1-MCP | 20 | Dynamic, interdependent MCP tool use | Full expected state recall and zero misbehavior |
+| IF | 20 | Verifiable instruction following | Every strict IFBench instruction check passes |
+| T3 | 20 | Multi-turn agent/user tool interaction | Upstream programmatic reward is exactly `1.0` |
+| MCP | 20 | Dynamic, interdependent MCP tool use | Full expected state recall and zero misbehavior |
 
-`HARD1 Overall` is the equal-weight arithmetic mean of the three family scores. Every case scores `0` or `1`; infrastructure failures are invalid and never converted to model failures.
+`Hard0.1 Overall` is the equal-weight arithmetic mean of the three family scores.
+Every case scores `0` or `1`; infrastructure failures are invalid and never
+converted to model failures. A standard evaluation has one valid score per case
+(60 total). Optional repeated runs are supplementary stability analysis and must
+be reported separately rather than as additional cases.
 
 ## Quick verification without inference
 
@@ -92,7 +104,11 @@ uv run hard1 run \
 
 Use `--dry-run` first to inspect the command without dispatching inference. Family-specific environment preparation and transport requirements are documented in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
-Historical Hard0 T3 pinned a fixed reference simulator. **Hard1 v1.0 uses candidate-selfplay:** use the tested model for both candidate and simulator, retaining separate role telemetry and identical protocol/settings across model campaigns. Do not aggregate with historical fixed-reference results. Selected T3 tasks remain programmatic-only; natural-language assertion judging is forbidden.
+Historical Hard0 T3 pinned a fixed reference simulator. **Hard0.1 uses
+candidate-selfplay:** use the tested model for both candidate and simulator,
+retaining separate role telemetry and identical protocol/settings across model
+campaigns. Do not aggregate with historical fixed-reference results. Selected T3
+tasks remain programmatic-only; natural-language assertion judging is forbidden.
 
 ## Construction labels
 
@@ -104,4 +120,7 @@ selection evidence, not an independent benchmark result.
 
 ## Scope and non-goals
 
-HARD1 is a local CLI and file format. It does not include a hosted service, leaderboard, database, scheduler, or platform component. It does not redistribute the upstream benchmark data. See [METHODOLOGY.md](METHODOLOGY.md), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and [SECURITY.md](SECURITY.md).
+Hard0.1 is a local CLI and file format. It does not include a hosted service,
+leaderboard, database, scheduler, or platform component. It does not redistribute
+the upstream benchmark data. See [METHODOLOGY.md](METHODOLOGY.md),
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and [SECURITY.md](SECURITY.md).

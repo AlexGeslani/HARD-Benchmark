@@ -14,7 +14,7 @@
     "project_uv_lock_sha256": "35cd020fb74e6861a51dd2d0b6c0239e8c02eec2fbeba2dc471521d749f1f9bc",
     "selection_policy_sha256": "e5b88e0bb8204a45fb61dd01291ae084c6a73afe2508c530177dcf721a59b228",
     "source_lock_sha256": "21db313a4d1c1d9add61e9397a8dd1d65375a9e4007c5d623eda4b33899480a3",
-    "tracked_payload_excluding_release_sha256": "0ccbddf65bdf8288b8d653f564020967574cbc7fec8ee93d09fc34620205175b"
+    "tracked_payload_excluding_release_sha256": "823aeb69664d83a8d3b032597948514cc51c305e4a7877f91770781bf9d8c828"
   },
   "inference_requests_during_freeze": {
     "bonsai": 0,
@@ -22,9 +22,19 @@
     "other_external_models": 0,
     "sol": 0
   },
+  "public_name": "Hard0.1",
   "publication": {
     "github_remote_created": true,
     "published": true
+  },
+  "reclassification": {
+    "initial_public_name": "Hard1 v1.0",
+    "preserved_internal_identifiers": [
+      "HARD1-* case IDs",
+      "hard1 package and CLI",
+      "1.1.0 contract",
+      "historical HARD2 lineage"
+    ]
   },
   "schema": "hard1-release-v1",
   "status": "PUBLISHED",

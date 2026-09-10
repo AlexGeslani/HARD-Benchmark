@@ -1,4 +1,4 @@
-# Hard1 v1.0 reproducibility and endpoint contract
+# Hard0.1 reproducibility and endpoint contract
 
 The public release version is `1.0.0`. Runtime records retain internal contract
 identifier `1.1.0`, module path `hard1.v11`, and historical case/event identifiers
@@ -6,7 +6,7 @@ so prior evidence remains verifiable.
 
 ## Locked components
 
-- HARD1 package: root `uv.lock`.
+- Legacy `hard1` compatibility package: root `uv.lock`.
 - IFBench and T3: exact upstream commits and their upstream `uv.lock` hashes.
 - ComplexMCP: exact upstream commit plus `locks/complexmcp-requirements.lock.txt`, captured from the validated runtime.
 - Dataset artifacts and upstream license files: SHA-256 locked in `locks/sources.lock.json`.
@@ -25,7 +25,7 @@ uv pip sync \
   locks/complexmcp-requirements.lock.txt
 ```
 
-Pass the relevant interpreter to `hard1 run --python ...` when it differs from the HARD1 CLI interpreter.
+Pass the relevant interpreter to `hard1 run --python ...` when it differs from the legacy compatibility CLI interpreter.
 
 ## Candidate endpoint
 
@@ -46,7 +46,7 @@ One user message per case; default output budget 8,192 tokens. The exact pinned 
 ### T3
 
 The candidate endpoint must support OpenAI-compatible structured tool calling
-through LiteLLM. Hard1 uses candidate-selfplay: the tested condition serves both
+through LiteLLM. Hard0.1 uses candidate-selfplay: the tested condition serves both
 candidate and simulator roles through separate conversations and role telemetry.
 The exact model, endpoint, settings, output policy, and seed policy must be explicit
 in the private run configuration and bound into campaign identity. Automatic retries

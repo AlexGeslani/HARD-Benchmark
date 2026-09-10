@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "hard1-benchmark"
 version = "1.0.0"
-description = "Hard-tail Agentic Reliability Dataset (HARD1)"
+description = "Hard-tail Agentic Reliability Dataset (Hard0.1)"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
